@@ -1,0 +1,109 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+ <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="A small web app for changing the temperature.">
+    <meta name="author" content="Drew Buikema">
+    <link rel="icon" href="/assets/ico/favicon.ico">
+
+    <title>Prometheus</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="../styles/bootstrap.css" rel="stylesheet">
+	<!-- Custom styles for this template -->
+    <link href="../styles/jumbotron-narrow.css" rel="stylesheet">
+	<!-- Styles unique to this site -->
+    <link href="../styles/style.css" rel="stylesheet">
+    
+    <!-- Firebase js call 
+    <script src='https://cdn.firebase.com/js/client/2.0.4/firebase.js'></script> -->
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li class="active"><a href="#">Home</a></li>
+          <li><a href="/support.html">Support</a></li>
+        </ul>
+        <h3 class="text-muted">Prometheus</h3>
+      </div>
+
+      <div class="jumbotron">
+        <h2>Indoors</h2>
+        <div class="indoor-temp">
+	        <div>
+	        	<h3>Currently 68 degrees and </h3>
+	        	<p><a class="btn btn-lg btn-success" href="#" role="button">Heating</a></p>
+	        </div>
+
+	        <div>
+	        	<h3>Set the desired temperature.</h3>
+	        	<!-- Temperature selector -->
+				<div class="btn-group">
+				    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Desired Temp <span class="caret"></span></button>
+				    <ul class="dropdown-menu" role="menu">
+					    <li>65</li>
+					    <li>66</li>
+					    <li>67</li>
+				    </ul>
+				</div>
+				<a class="btn btn-lg btn-success" href="#" role="button">Set</a>
+
+	        </div>
+	    </div>
+
+		
+        <h2>Outdoors</h2>
+        <!-- iframe for current weather in pinckney via http://blog.forecast.io/forecast-embeds/ -->
+        <div class="forecast">
+			<iframe id="forecast_embed" type="text/html" frameborder="0" height="245" width="100%" src="https://forecast.io/embed/#lat=42.4516&lon=-83.9409&name=Pinckney"> 
+            </iframe>
+        </div>
+      </div>
+
+      <div class="row marketing">
+        <div class="col-lg-6">
+        	<h3>Turn the fan on for 1 hour.</h3>
+        	<p><a class="btn btn-lg btn-success" href="#" role="button">Run Fan</a></p>
+        	<br>
+        </div>
+
+        <div class="col-lg-6">
+        	<h3>Set Home or Away for energy savings.</h3>
+        	<p>
+        		<a class="btn btn-lg btn-success" href="#" role="button">Home</a>
+        		<a class="btn btn-lg btn-success" href="#" role="button">Away</a>
+        	</p>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>&copy; swimmies4icarus 2014</p>
+      </div>
+
+    </div> <!-- /container -->
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="/js/bootstrap.js"></script>
+    <!-- <script src="/js/bootstrap.min.js"></script> -->
+    <script src="/js/npm.js"></script
+
+  </body>
+</html>
